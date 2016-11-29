@@ -1,0 +1,24 @@
+.content {
+    &__text {
+        text-align: center;
+        margin: 10px 0px 10px 0px;
+    }
+
+    &__image {
+        background-image: url(../images/me.jpg);
+        background-repeat: no-repeat;
+        background-size: 270px 358px;
+        width: 270px;
+        height: 370px;
+        margin: 20px 15px 0px 15px;
+    }
+}
+
+.title {
+    font-size: 30px;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-weight: 100;
+}

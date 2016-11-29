@@ -1,0 +1,17 @@
+.content2 {
+    margin: 10px 0 0 0;
+
+    &__text {
+        padding: 10px 0px 10px 10px;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        &__image {
+            margin: 10px;
+        }
+    }
+}

@@ -1,6 +1,7 @@
-$color: red;
-$color2: blue;
-
-.test-class {
-    background-color: $color;
-}
+@import "base/base.scss";
+@import "template.scss";
+@import "styles/modules/first-tab.scss";
+@import "styles/modules/second-tab.scss";
+@import "styles/modules/third-tab.scss";
+@import "styles/components/tab.scss";
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css");
