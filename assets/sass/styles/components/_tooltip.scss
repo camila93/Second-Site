@@ -1,0 +1,40 @@
+.tab {
+    &__icon {
+        &__tooltipe {
+            visibility: hidden;
+            position: absolute;
+            display: block;
+
+            @include media-q {
+                top: 135px;
+                width: 90px;
+                font-family: $font-default;
+                font-size: 20px;
+                background-color: #222222;
+                border: solid 0.6em #222222;
+                margin-left: -17px;
+
+                &::after {
+                    position: absolute;
+                    top: 30px;
+                    left: 20px;
+                    content: '';
+                    border-top: solid 0.6em #222222;
+                    border-left: solid 0.6em transparent;
+                    border-right: solid 0.6em transparent;
+                }
+            }
+        }
+
+        &:hover {
+            @include  media-q {
+                cursor: pointer;
+                opacity: 2;
+
+                .tab__icon__tooltipe{
+                    visibility: visible;
+                }
+            }
+        }
+    }    
+}

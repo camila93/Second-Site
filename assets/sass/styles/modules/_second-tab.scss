@@ -1,8 +1,12 @@
 .content2 {
-    margin: 10px 0 0 0;
+
+    @include media-q {
+        visibility: hidden;
+    }
 
     &__text {
-        padding: 10px 0px 10px 10px;
+        margin: 20px 5px 20px 5px;
+        line-height: 25px;
     }
 
     &__box {
@@ -10,8 +14,40 @@
         justify-content: center;
         flex-wrap: wrap;
 
-        &__image {
-            margin: 10px;
+        @include media-q {
+            padding-bottom: 80px;
         }
+
+        &__image {
+            margin: 5px 5px 10px 5px;
+            width: 276px;
+            height: 207px;
+
+            @include media-q {
+                margin: 5px 10px 10px 10px;
+            }
+        }
+    }
+}
+
+.titles {
+    font-weight: $font-weight+200;
+    color: #363636;
+
+    @include media-q {
+        font-size: 40px;
+        padding: 80px 10px 10px 60px;
+    }
+}
+
+.description {
+    font-size: 15px;
+    font-weight: $font-weight;
+    color: #777777;
+
+    @include media-q {
+        font-size: 23px;
+        line-height: 40px;
+        padding: 20px 10px 10px 60px;
     }
 }

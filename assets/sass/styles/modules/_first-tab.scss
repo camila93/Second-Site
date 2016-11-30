@@ -1,7 +1,23 @@
-.content {
+.content1 {
+    margin: 10px 0 0 0;
+    @include media-q {
+        visibility: hidden;
+    }
+    &__home {
+        @include media-q {
+            display: flex;
+            align-items: center;
+        }
+    }
+
     &__text {
         text-align: center;
         margin: 10px 0px 10px 0px;
+
+        @include media-q {
+            text-align: left;
+            margin: 0px 10px 0px 20px;
+        }
     }
 
     &__image {
@@ -11,14 +27,34 @@
         width: 270px;
         height: 370px;
         margin: 20px 15px 0px 15px;
+
+        @include media-q {
+            background-size: 370px 468px;
+            width: 370px;
+            height: 468px;
+
+            //POSICIONAMENTO DA IMAGEM
+            margin: 0px 0px 0px 0px;
+        }
     }
 }
 
-.title {
+.first-title {
     font-size: 30px;
+    font-weight: $font-weight+200;
+    color: #363636;
+
+    @include media-q {
+        font-size: 60px;
+    }
 }
 
 .subtitle {
-    font-size: 20px;
-    font-weight: 100;
+    font-size: 18px;
+    color: #777777;
+    font-weight: $font-weight;
+
+    @include media-q {
+        font-size: 36px;
+    }
 }

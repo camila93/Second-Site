@@ -1,4 +1,30 @@
-.content {
+.tab-wrap {
+    background-image: url(../../images/overlay.png), url(../../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: auto, 100% 100%;
+    padding: 8px;
+
+    @include media-q {
+        padding: 170px 450px 200px 450px;
+    }
+}
+
+.contents {
+    @include media-q {
+        //visibility: hidden;
+        position: absolute;
+        display: block;
+        top: 260px;
+        left: 500px;
+        width: 900px;
+    }
+}
+
+.content1 {
     background-color: #FFF;
     padding: 10px 3px 0px 3px;
+
+    @include media-q {
+        padding: 0px;
+    }
 }

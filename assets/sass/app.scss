@@ -1,7 +1,22 @@
+//vendor
+
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400");
+
+//config
+@import "config/vars.scss";
+@import "config/mixins.scss";
+
+//base and template styles
 @import "base/base.scss";
 @import "template.scss";
+
+//modules
 @import "styles/modules/first-tab.scss";
 @import "styles/modules/second-tab.scss";
 @import "styles/modules/third-tab.scss";
+@import "styles/modules/footer.scss";
+
+//components
 @import "styles/components/tab.scss";
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css");
+@import "styles/components/tooltip.scss";

@@ -1,6 +1,11 @@
 .tab {
     margin: 18px 0px 15px 39px;
 
+    @include media-q {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
     &__option {
         display: none;
 
@@ -11,5 +16,25 @@
         color: #FFF;
         opacity: 0.5;
         margin: 0px 15px 0px 15px;
+
+        @include media-q {
+            font-size: 45px;
+            width: 57px;
+        }
+    }
+
+    input:checked + label{
+        @include media-q {
+            opacity: 1;
+
+            &::after {
+                content: '';
+                position: relative;
+                top: 100px;
+                border-top: solid 0.6em #222222;
+                border-left: solid 0.6em transparent;
+                border-right: solid 0.6em transparent;
+            }
+        }
     }
 }

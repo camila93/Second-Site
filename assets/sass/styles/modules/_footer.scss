@@ -1,0 +1,50 @@
+.footer {
+
+    &__rights {
+        font-size: 13px;
+        font-weight: 200;
+        color: #CCC;
+        color: rgba(255, 255, 255, 0.45);
+        text-align: center;
+        line-height: 25px;
+        margin-bottom: 10px;
+
+        @include media-q {
+            font-size: 20px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+
+            li {
+                margin-right: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:first-child {
+                    &::before {
+                        content: none;
+                    }
+                }
+
+                &::before {
+                    content: '';
+                    display: block;
+                    border-radius: 50%;
+                    background-color: #CCC;
+                    color: rgba(255, 255, 255, 0.45);
+                    width: 5px;
+                    height: 5px;
+                    line-height: 5px;
+                    text-align: center;
+                    margin-right: 5px;
+
+                }
+            }
+        }
+
+        &__link {
+            text-decoration: underline;
+        }
+    }
+}
