@@ -1,9 +1,13 @@
 .content2 {
+    margin: 10px 0 0 0;
 
     @include media-q {
-        visibility: hidden;
+        display: none;
+        padding: 0px;
     }
 
+    background-color: #FFF;
+    padding: 10px 3px 0px 3px;
     &__text {
         margin: 20px 5px 20px 5px;
         line-height: 25px;

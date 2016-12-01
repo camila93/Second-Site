@@ -1,4 +1,4 @@
-.tab {
+.tabs {
     &__icon {
         &__tooltipe {
             visibility: hidden;
@@ -31,10 +31,10 @@
                 cursor: pointer;
                 opacity: 2;
 
-                .tab__icon__tooltipe{
+                .tabs__icon__tooltipe{
                     visibility: visible;
                 }
             }
         }
-    }    
+    }
 }

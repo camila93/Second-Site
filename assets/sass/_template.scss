@@ -1,4 +1,5 @@
 .tab-wrap {
+
     background-image: url(../../images/overlay.png), url(../../images/bg.jpg);
     background-repeat: no-repeat;
     background-size: auto, 100% 100%;
@@ -6,25 +7,26 @@
 
     @include media-q {
         padding: 170px 450px 200px 450px;
+
     }
+    @for $i from 1 through 3 {
+        input:nth-of-type(#{$i}):checked ~ .contents .tab:nth-of-type(#{$i}) {
+            @include media-q {
+                display: block;
+            }
+        }
+
+    }
+
 }
 
 .contents {
+
     @include media-q {
-        //visibility: hidden;
         position: absolute;
-        display: block;
-        top: 260px;
+        top: 300px;
         left: 500px;
         width: 900px;
     }
-}
 
-.content1 {
-    background-color: #FFF;
-    padding: 10px 3px 0px 3px;
-
-    @include media-q {
-        padding: 0px;
-    }
 }

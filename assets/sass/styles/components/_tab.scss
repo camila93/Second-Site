@@ -1,5 +1,5 @@
-.tab {
-    margin: 18px 0px 15px 39px;
+.tabs {
+    margin: 18px 0px 0px 0px;
 
     @include media-q {
         text-align: center;
@@ -8,14 +8,13 @@
 
     &__option {
         display: none;
-
     }
 
     &__icon {
         font-size: 29px;
         color: #FFF;
         opacity: 0.5;
-        margin: 0px 15px 0px 15px;
+        margin: 0px 23px 0px 23px;
 
         @include media-q {
             font-size: 45px;
@@ -24,16 +23,19 @@
     }
 
     input:checked + label{
+
         @include media-q {
             opacity: 1;
 
             &::after {
                 content: '';
                 position: relative;
-                top: 100px;
-                border-top: solid 0.6em #222222;
+                top: 10px;
+                left: 0px;
                 border-left: solid 0.6em transparent;
                 border-right: solid 0.6em transparent;
+                border-bottom: solid 0.6em #FFF;
+                display: block;
             }
         }
     }
