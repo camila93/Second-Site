@@ -1,32 +1,28 @@
 .tab-wrap {
 
     background-image: url(../../images/overlay.png), url(../../images/bg.jpg);
-    background-repeat: no-repeat;
+    background-repeat: repeat, no-repeat;
     background-size: auto, 100% 100%;
-    padding: 8px;
+        padding: 10px 5px 0px 5px;
 
     @include media-q {
-        padding: 170px 450px 200px 450px;
-
+        padding: 100px 0px 0px 0px;
     }
+
     @for $i from 1 through 3 {
         input:nth-of-type(#{$i}):checked ~ .contents .tab:nth-of-type(#{$i}) {
             @include media-q {
                 display: block;
             }
         }
-
     }
-
 }
 
 .contents {
 
     @include media-q {
-        position: absolute;
-        top: 300px;
-        left: 500px;
-        width: 900px;
+        position: relative;
+        display: flex;
+        justify-content: center;
     }
-
 }

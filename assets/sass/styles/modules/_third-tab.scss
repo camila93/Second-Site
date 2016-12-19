@@ -4,15 +4,17 @@
     @include media-q {
         display: none;
         padding: 0px;
+        width: 1005px;
     }
 
     background-color: #FFF;
     padding: 10px 3px 0px 3px;
+
     &__box {
         margin: 20px 10px 20px 10px;
 
         @include media-q {
-            margin: 0px 40px 20px 60px;
+            margin: 0px 60px 20px 60px;
         }
 
         &__form {
@@ -26,12 +28,13 @@
 
                 line-height: 45px;
                 width: 100%;
-                border: 1px solid black;
-                margin: 10px 0px 10px 0px;
-                padding-left: 10px;
+                border: none;
+                margin-bottom: 10px;
 
                 @include media-q {
                     font-size: 20px;
+                    padding: 5px;
+                    margin: 10px 2px 10px 0px;
                 }
             }
 
@@ -55,15 +58,17 @@
                 }
             }
         }
-
     }
 }
 
 .box-name-email {
-    //display: flex;
-    //flex-wrap: wrap;
+
+    @include media-q {
+        display: flex;
+        justify-content: center;
+    }
 }
 
-.input-name-email {
-
+.text-button {
+    display: flex;
 }
