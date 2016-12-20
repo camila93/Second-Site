@@ -3,13 +3,14 @@
     background-image: url(../../images/overlay.png), url(../../images/bg.jpg);
     background-repeat: repeat, no-repeat;
     background-size: auto, 100% 100%;
-        padding: 10px 5px 0px 5px;
+    padding: 10px 5px 0px 5px;
 
     @include media-q {
         padding: 100px 0px 0px 0px;
+        min-height: 1014px;
     }
 
-    @for $i from 1 through 3 {
+    @for $i from 1 through 4 {
         input:nth-of-type(#{$i}):checked ~ .contents .tab:nth-of-type(#{$i}) {
             @include media-q {
                 display: block;
@@ -24,5 +25,12 @@
         position: relative;
         display: flex;
         justify-content: center;
+    }
+}
+
+@keyframes wraps {
+    100% {
+        stroke-opacity: 1;
+        stroke-dashoffset: 0;
     }
 }

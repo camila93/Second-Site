@@ -6,30 +6,43 @@
         <link rel="stylesheet" href="dist/app.css">
     </head>
 
-    <body>
+    <body id="app">
 
         <div class="tab-wrap">
 
             <div class="tabs">
 
-                <input class="tabs__option" type="radio" id="tab1" name="tabGroup" value="" checked>
+                <input class="tabs__option" type="radio" id="tab1"
+                    name="tabGroup" value="" checked>
                 <label class="tabs__icon fa fa-home" for="tab1">
-                    <span class="tabs__icon__tooltipe">Home</span>
+                    <span class="tabs__icon__tooltipe">
+                        Home
+                    </span>
                 </label>
 
-                <input class="tabs__option" type="radio" id="tab2" name="tabGroup" value="">
+                <input class="tabs__option" type="radio" id="tab2"
+                    name="tabGroup" value="">
+
                 <label class="tabs__icon fa fa-folder" for="tab2">
-                    <span class="tabs__icon__tooltipe">Work</span>
+                    <span class="tabs__icon__tooltipe">
+                        Work
+                    </span>
                 </label>
 
-                <input class="tabs__option" type="radio" id="tab3" name="tabGroup" value="">
+                <input class="tabs__option" type="radio" id="tab3"
+                    name="tabGroup" value="">
                 <label class="tabs__icon fa fa-envelope" for="tab3">
-                    <span class="tabs__icon__tooltipe">Contact</span>
+                    <span class="tabs__icon__tooltipe">
+                        Contact
+                    </span>
                 </label>
 
-                <input class="tabs__option" type="radio" id="tab4" name="tabGroup" value="">
-                <label class="tabs__icon fa fa-twitter" for="tab4">
-                    <span class="tabs__icon__tooltipe">Twitter</span>
+                <input class="tabs__option " type="radio" id="tab4"
+                    name="tabGroup" value="">
+                <label class="tabs__icon  twitter fa fa-twitter" for="tab4">
+                    <span class="tabs__icon__tooltipe">
+                        Twitter
+                    </span>
                 </label>
 
                 <div class="contents">
@@ -38,8 +51,12 @@
                         <div class="content1__home">
 
                             <div class="content1__text">
-                                <h1 class="content1__text first-title">Jane Doe</h1>
-                                <h2 class="content1__text subtitle">Senior Astral Projectionist</h2>
+                                <h1 class="content1__text first-title">
+                                    Jane Doe
+                                </h1>
+                                <h2 class="content1__text subtitle">
+                                    Senior Astral Projectionist
+                                </h2>
                             </div>
 
                             <div class="content1__image">
@@ -51,8 +68,14 @@
 
                     <div class="tab content2">
                         <div class="content2__text">
-                            <h3 class="content2__text titles">Work</h3>
-                            <p class="content2__text description">Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia luctus elit eget interdum.</p>
+                            <h3 class="content2__text titles">
+                                Work
+                            </h3>
+                            <p class="content2__text description">
+                                Phasellus enim sapien, blandit ullamcorper elementum eu,
+                                condimentum eu elit. Vestibulum ante ipsum primis in faucibus orci
+                                luctus et ultrices posuere cubilia luctus elit eget interdum.
+                            </p>
                         </div>
 
                         <div class="content2__box">
@@ -78,63 +101,98 @@
                         <h3 class="content2__text titles">Contact Me</h3>
 
                         <div class="content3__box">
-                            <form class="content3__box__form" action="index.html" method="post">
+                            <form class="content3__box__form" action="index.html"
+                                method="post">
 
                                 <div class="box-name-email">
-                                    <input class="content3__box__form__input input-name-email"type="text" name="name" value="" placeholder="Name">
-                                    <input class="content3__box__form__input input-name-email" type="text" name="email" value="" placeholder="E-mail">
+                                    <input class="content3__box__form__input input-name-email"
+                                        type="text" name="name" value="" placeholder="Name">
+                                    <input class="content3__box__form__input input-name-email"
+                                        type="text" name="email" value="" placeholder="E-mail">
                                 </div>
 
                                 <div class="">
-                                    <input class="content3__box__form__input" type="text" name="subject" value="" placeholder="Subject">
+                                    <input class="content3__box__form__input"
+                                        type="text" name="subject" value="" placeholder="Subject">
 
-                                    <textarea class="content3__box__form__input" name="message" rows="8" cols="40" placeholder="Message"></textarea>
+                                    <textarea class="content3__box__form__input"
+                                        name="message" rows="8" cols="40" placeholder="Message"></textarea>
                                 </div>
 
                                 <div class="text-button">
-                                    <button class="content3__box__form__button" type="button" name="send" rows="8"> Send Message</button>
+                                    <button class="content3__box__form__button"
+                                        type="button" name="send" rows="8">
+                                        Send Message
+                                    </button>
                                 </div>
                             </form>
                         </div>
 
                     </div>
-                </div>
 
+                    <div class="tab overlay-twitter">
+                        <div class="overlay-twitter__modal">
+                            <div class="overlay-twitter__modal__content">
+                                <div class="overlay-twitter__modal__content__images">
+                                    <div class="overlay-twitter__modal__content__images__img">
+                                    </div>
+                                    <span class="overlay-twitter__modal__content__images__icon fa fa-camera"
+                                        aria-hidden="true">
+                                    </span>
+                                    <span class="overlay-twitter__modal__content__images__icon fa fa-camera"
+                                        aria-hidden="true">
+                                    </span>
+                                    <span class="overlay-twitter__modal__content__images__icon fa fa-camera"
+                                        aria-hidden="true">
+                                    </span>
+                                </div>
+
+                                <div class="overlay-twitter__modal__content__logo-text">
+                                    <label class="overlay-twitter__modal__content__logo-text__icon fa fa-twitter"
+                                        for="tab4">
+                                    </label>
+                                    <textarea name="message" class="overlay-twitter__modal__content__logo-text__textarea"
+                                        rows="16" cols="40" placeholder="What's happening?"></textarea>
+                                </div>
+
+                                <div class="overlay-twitter__modal__content__gadgets">
+
+                                    <a href="#" class="overlay-twitter__modal__content__gadgets__close fa fa-times"
+                                        aria-hidden="true">
+                                    </a>
+
+                                    <p class="overlay-twitter__modal__content__gadgets__icon">
+                                        GIF
+                                    </p>
+
+                                    <span class="overlay-twitter__modal__content__gadgets__icon fa fa-map-marker"
+                                        aria-hidden="true">
+                                    </span>
+                                    <span class=" overlay-twitter__modal__content__gadgets__check fa fa-check"
+                                        aria-hidden="true">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="footer">
                 <ul class="footer__rights">
                     <li> © Untitled.</li>
-                    <li>Design:  <a class="footer__rights__link" href="#"> HTML 5 UP</a></li>
-                    <li>Demo Images: <a class="footer__rights__link" href="#"> Unsplash</a></li>
+                    <li>Design:
+                        <a class="footer__rights__link" href="#">
+                            HTML 5 UP
+                        </a>
+                    </li>
+                    <li>
+                        Demo Images:
+                        <a class="footer__rights__link" href="#">
+                            Unsplash
+                        </a>
+                    </li>
                 </ul>
-            </div>
-
-            <div class="overlay-twitter">
-                <div class="overlay-twitter__modal">
-                    <div class="overlay-twitter__modal__content">
-                        <div class="overlay-twitter__modal__content__images">
-                            <img src="images/me.jpg" class="overlay-twitter__modal__content__images" alt="" />
-                            <span class="overlay-twitter__modal__content__images__icon fa fa-camera" aria-hidden="true"></span>
-                            <span class="overlay-twitter__modal__content__images__icon fa fa-camera" aria-hidden="true"></span>
-                            <span class="overlay-twitter__modal__content__images__icon fa fa-camera" aria-hidden="true"></span>
-                        </div>
-
-                        <div class="overlay-twitter__modal__content__logo-text">
-                            <label class="overlay-twitter__modal__content__logo-text__icon fa fa-twitter" for="tab4"></label>
-                            <textarea class="overlay-twitter__modal__content__logo-text__textarea" name="message" rows="8" cols="40" placeholder="What's happening?"></textarea>
-                        </div>
-
-                        <div class="overlay-twitter__modal__content__gadgets">
-                            <span class="overlay-twitter__modal__content__gadgets__close fa fa-times" aria-hidden="true"></span>
-                            <p class="overlay-twitter__modal__content__gadgets__icon">GIF</p>
-                            <span class="overlay-twitter__modal__content__gadgets__icon fa fa-map-marker" aria-hidden="true"></span>
-                            <span class=" overlay-twitter__modal__content__gadgets__check fa fa-check" aria-hidden="true"></span>
-                        </div>
-
-                    </div>
-                </div>
-
             </div>
 
         </div>

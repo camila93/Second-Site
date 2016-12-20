@@ -26,16 +26,20 @@
 
         @include media-q {
             opacity: 1;
+            transition: opacity 5s ease;
 
-            &::after {
-                content: '';
-                position: relative;
-                top: 10px;
-                left: 0px;
-                border-left: solid 0.6em transparent;
-                border-right: solid 0.6em transparent;
-                border-bottom: solid 0.6em #FFF;
-                display: block;
+            &:not([for="tab4"])
+            {
+                &::after {
+                    content: '';
+                    position: relative;
+                    top: 10px;
+                    left: 0px;
+                    border-left: solid 0.6em transparent;
+                    border-right: solid 0.6em transparent;
+                    border-bottom: solid 0.6em #FFF;
+                    display: block;
+                }
             }
         }
     }

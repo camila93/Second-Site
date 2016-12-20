@@ -1,5 +1,9 @@
 .footer {
 
+    @include  media-q {
+        padding-bottom: 100px;
+    }
+
     &__rights {
         font-size: 13px;
         font-weight: 200;
