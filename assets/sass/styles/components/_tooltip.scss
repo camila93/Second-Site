@@ -2,10 +2,11 @@
     &__icon {
         &__tooltipe {
             visibility: hidden;
-            position: absolute;
-            display: block;
-
+            display: none;
+            
             @include media-q {
+                position: absolute;
+                display: block;
                 top: 50px;
                 width: 90px;
                 font-family: $font-default;

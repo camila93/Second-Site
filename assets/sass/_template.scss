@@ -10,10 +10,11 @@
         min-height: 1014px;
     }
 
-    @for $i from 1 through 4 {
+    @for $i from 1 through 3 {
         input:nth-of-type(#{$i}):checked ~ .contents .tab:nth-of-type(#{$i}) {
             @include media-q {
                 display: block;
+                animation: showContent 2s;
             }
         }
     }
@@ -22,15 +23,14 @@
 .contents {
 
     @include media-q {
+
         position: relative;
         display: flex;
         justify-content: center;
     }
 }
 
-@keyframes wraps {
-    100% {
-        stroke-opacity: 1;
-        stroke-dashoffset: 0;
-    }
+@keyframes showContent {
+    from {opacity: 0;}
+    to {opacity:1;}
 }

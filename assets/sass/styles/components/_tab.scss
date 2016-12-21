@@ -20,13 +20,13 @@
             font-size: 45px;
             width: 57px;
         }
+
     }
 
     input:checked + label{
 
         @include media-q {
             opacity: 1;
-            transition: opacity 5s ease;
 
             &:not([for="tab4"])
             {
@@ -39,8 +39,14 @@
                     border-right: solid 0.6em transparent;
                     border-bottom: solid 0.6em #FFF;
                     display: block;
+                    animation: showContent 2s;
                 }
             }
         }
     }
+}
+
+@keyframes showContent {
+    from {opacity: 0;}
+    to {opacity:1;}
 }

@@ -4,9 +4,10 @@
     height: 100%;
 
     @include media-q {
-        display: none;
+        display: none;        
         position: fixed;
         top: 0;
+        animation: showModal 1s;
     }
 
     &__modal {
@@ -17,6 +18,8 @@
             position: relative;
             top: 19%;
             left: 35%;
+
+            animation: showModal 1s;
         }
 
         &__content {
@@ -159,4 +162,14 @@
             }
         }
     }
+}
+
+.overlay-twitter:target {
+    display: block;
+    position: fixed;
+}
+
+@keyframes showModal {
+    from {opacity: 0;}
+    to {opacity:1;}
 }
