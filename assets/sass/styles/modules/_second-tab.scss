@@ -39,11 +39,11 @@
 .titles {
     font-weight: $font-weight+200;
     color: #363636;
+    text-align: left;
 
     @include media-q {
         font-size: 40px;
         padding: 80px 10px 10px 60px;
-        text-align: left;
     }
 }
 
@@ -51,9 +51,11 @@
     font-size: 15px;
     font-weight: $font-weight;
     color: #777777;
+    text-align: left;
 
     @include media-q {
         font-size: 23px;
         line-height: 40px;
+        text-align: justify;
     }
 }

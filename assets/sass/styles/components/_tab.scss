@@ -1,6 +1,7 @@
 .tabs {
     margin: 18px 0px 0px 0px;
-
+    text-align: center;
+    
     @include media-q {
         text-align: center;
         margin-bottom: 60px;
